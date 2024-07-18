@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Nav from "../components/navbereich/Nav";
 
 const SharedLayout = () => {
     return (
         <>
-            {/* nav/header */}
-            <h2>Ich bin die zukünftige Navbar</h2>
+          <Nav/>
             <main className="main-container">
                 <Outlet />
             </main>
