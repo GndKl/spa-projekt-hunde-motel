@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <>
-             <footer>
-              <p>© 2024 Klaudia Gonda</p>
-             </footer>
-        </>
-    );
-}
+  return (
+    <>
+      <footer>
+        <p>© 2024 Lady Digital</p>
+      </footer>
+    </>
+  );
+};
 
 export default Footer;
