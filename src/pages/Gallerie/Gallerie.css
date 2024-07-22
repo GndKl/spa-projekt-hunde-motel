@@ -1,0 +1,33 @@
+.carousel {
+    position: relative;
+    width: 300px; /* Passe die Größe nach Bedarf an */
+    height: 200px; /* Passe die Größe nach Bedarf an */
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
