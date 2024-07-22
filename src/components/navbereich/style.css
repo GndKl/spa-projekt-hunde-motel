@@ -5,6 +5,16 @@
     grid-column-gap: 10px;
 }
 
+.header-container h1 {
+    font-size: 25px;
+    color: blue;
+}
+.header-text-container p {
+    font-size: 25px;
+    font-style: italic;
+    color: brown;
+}
+
 .header-image-container {
     grid-area: 1 / 1 / 2 / 2;
 }

@@ -9,6 +9,16 @@
 }
 
 body {
+    background-color: beige;
     font-size: 1.6rem;
     font-family: Arial, sans-serif;
+}
+h1 {
+    color: blue;
+}
+h2 {
+    color: brown;
+}
+footer p {
+    color: green;
 }

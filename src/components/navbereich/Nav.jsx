@@ -39,6 +39,7 @@ const Nav = () => {
             <li>
               <a href="/gallerie">Gallerie</a>
             </li>
+            <br></br>
 
             <input type="text" placeholder="Search.." />
           </ul>
