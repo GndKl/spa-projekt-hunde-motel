@@ -5,8 +5,12 @@ import Home from "./pages/Home/Home";
 import Kontakt from "./pages/Kontakt/Kontakt";
 import NotFound from "./pages/NotFound/NotFound";
 import "./css/App.css";
-import Angebote from "./pages/Angebote/Angebote";
+
+import Gallerie from "./pages/Gallerie/Gallerie";
+import Service from "./pages/Service/Service";
 import About from "./pages/About/About";
+import Angebote from "./pages/Angebote/Angebote";
+import NHe from "./pages/Nähe/Nähe";
 
 function App() {
   return (
@@ -16,10 +20,20 @@ function App() {
           <Routes>
             <Route path="/" element={<SharedLayout />}>
               <Route index element={<Home />} />
-              {/* Weitere Routen hier zwischen */}
-              <Route path="angebote" element={<Angebote />} />
-              <Route path="kontakt" element={<Kontakt />} />
+
+              <Route path="gallerie" element={<Gallerie />} />
+
               <Route path="About" element={<About />} />
+
+              <Route path="Angebote" element={<Angebote />} />
+
+              <Route path="service" element={<Service />} />
+
+              <Route path="nähe" element={<NHe />} />
+
+              {/* Weitere Routen hier zwischen */}
+              <Route path="kontakt" element={<Kontakt />} />
+
               {/* Weitere Routen hier zwischen */}
               <Route path="*" element={<NotFound />} />
             </Route>
