@@ -6,6 +6,7 @@ import Kontakt from "./pages/Kontakt/Kontakt";
 import NotFound from "./pages/NotFound/NotFound";
 import "./css/App.css";
 import Angebote from "./pages/Angebote/Angebote";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               {/* Weitere Routen hier zwischen */}
               <Route path="angebote" element={<Angebote />} />
               <Route path="kontakt" element={<Kontakt />} />
+              <Route path="About" element={<About />} />
               {/* Weitere Routen hier zwischen */}
               <Route path="*" element={<NotFound />} />
             </Route>

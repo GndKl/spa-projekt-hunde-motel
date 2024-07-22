@@ -1,35 +1,60 @@
-import React from "react";
 import "./style.css";
-
 const Nav = () => {
   return (
     <>
-      <div class="nav-image">
+      <div className="nav-image">
         <img
           src="./images/megi.jpg"
-          class="img-fluid"
-          width="1300px"
+          className="img-fluid"
+          width="300px"
+          height="300px"
+        />
+        <img
+          src="./images/dog2.jpg"
+          className="img-fluid"
+          width="300px"
+          height="300px"
+        />
+        <img
+          src="./images/dog3.jpg"
+          className="img-fluid"
+          width="300px"
+          height="300px"
+        />
+        <img
+          src="./images/dachshund.jpg"
+          className="img-fluid"
+          width="300px"
           height="300px"
         />
       </div>
 
-      <h1>Willkommen bei Happy-Dog Motel Besucher</h1>
-      <h4>Bei uns dreht sich alles um das Wohl Ihres Haustieres</h4>
+      <h2>
+        Herzlich Willkommen im Hunde-Motel &quot;Pfotenparadies&quot;! 🐾🐶❤️
+      </h2>
+      <h3>Bei uns dreht sich alles um das Wohl Ihrer pelzigen Freund!</h3>
 
       <nav>
-        <div class="topnav">
+        <div className="topnav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Startseite</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">Über uns</a>
             </li>
             <li>
               <a href="#">Kontakt</a>
             </li>
             <li>
-              <a href="#">Angebote</a>
+              <a href="/service">Aktivitäten und Services</a>
+            </li>
+            <li>
+              <a href="#">Unsere Angebote</a>
+            </li>
+
+            <li>
+              <a href="/gallerie">Gallerie</a>
             </li>
 
             <input type="text" placeholder="Search.." />
