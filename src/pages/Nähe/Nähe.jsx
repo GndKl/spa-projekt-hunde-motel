@@ -3,11 +3,11 @@ import React from 'react';
 const NäHe = () => {
     return (
         <>
-            <div class="dropdown">
-              <button class="dropbtn"> dsf
-                <i class="fa fa-caret-down"></i>
+            <div className="dropdown">
+              <button className="dropbtn"> dsf
+                <i className="fa fa-caret-down"></i>
          </button>
-         <div class="dropdown-content">
+         <div className="dropdown-content">
          <li><a href="/service">Aktivitäten und Services</a>
          
          </li>

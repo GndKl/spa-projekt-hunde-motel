@@ -5,14 +5,14 @@ import "./style.css";
 const Nav = () => {
     return (
         <>
-            <div class="nav-image">
-                  <img src="./images/megi.jpg" class="img-fluid" width="1300px" height="300px" />
+            <div className="nav-image">
+                  <img src="./images/megi.jpg" className="img-fluid" width="1300px" height="300px" />
             </div>
     
             <h4>“Ein Paradies für Hunde – und wir meinen wirklich Hunde!”</h4>
         
         <nav>
-        <div class="topnav">
+        <div className="topnav">
 
            
 
@@ -21,10 +21,10 @@ const Nav = () => {
             <li><a href="/about">Über uns</a></li>
             <li><a href="#">Kontakt</a></li>
             
-            <div class="dropdown">
-              <button class="dropbtn"> Nützlich
-                <i class="fa fa-caret-down"></i> </button>
-         <div class="dropdown-content">
+            <div className="dropdown">
+              <button className="dropbtn"> Nützlich
+                <i className="fa fa-caret-down"></i> </button>
+         <div className="dropdown-content">
          <li><a href="/service">Aktivitäten und Services</a>
          
          </li>
