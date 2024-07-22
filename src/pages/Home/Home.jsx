@@ -5,10 +5,10 @@ const Home = () => {
     <>
       <h1>Ich bin die Startseite</h1>
 
-      <div class="container">
-        {/*<img src="./images/schnuffel.jpg" class="img-fluid"  style="width:100%;"/>*/}
+      <div className="container">
+        {/*<img src="./images/schnuffel.jpg" className="img-fluid"  style="width:100%;"/>*/}
 
-        <div class="content">
+        <div className="content">
           <h2>Herzlich Willkommen im Woofy-Motel “Pfotenparadies”! 🐾🐶❤️</h2>
           <p>
             {" "}

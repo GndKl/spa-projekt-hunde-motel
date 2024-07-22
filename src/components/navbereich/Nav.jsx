@@ -2,10 +2,10 @@ import "./style.css";
 const Nav = () => {
   return (
     <>
-      <div class="nav-image">
+      <div className="nav-image">
         <img
           src="./images/megi.jpg"
-          class="img-fluid"
+          className="img-fluid"
           width="1300px"
           height="300px"
         />
@@ -14,7 +14,7 @@ const Nav = () => {
       <h4>“Ein Paradies für Hunde – und wir meinen wirklich Hunde!”</h4>
 
       <nav>
-        <div class="topnav">
+        <div className="topnav">
           <ul>
             <li>
               <a href="/">Startseite</a>
@@ -26,13 +26,13 @@ const Nav = () => {
               <a href="#">Kontakt</a>
             </li>
 
-            <div class="dropdown">
-              <button class="dropbtn">
+            <div className="dropdown">
+              <button className="dropbtn">
                 {" "}
                 Nützlich
-                <i class="fa fa-caret-down"></i>{" "}
+                <i className="fa fa-caret-down"></i>{" "}
               </button>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <li>
                   <a href="/service">Aktivitäten und Services</a>
                 </li>
