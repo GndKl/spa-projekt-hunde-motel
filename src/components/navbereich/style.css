@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:aquamarine;
+    background-color:rgba(223, 133, 30, 0.603);
 }
 
 li {
@@ -17,6 +17,69 @@ header {
     padding: 20px;
 
 }
+/*.bildtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}*/
+
+
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
 
 nav ul {
     list-style: none;
@@ -37,9 +100,26 @@ nav a {
 
 .nav-image{
     width: 100%;
-   /* margin: auto;*/
+   /**margin: auto;**/
     height: 100%;
 }
+
+
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position:relative; /* wichtig richtig eintellen!!!!*/
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(225, 134, 29, 0.9); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+ border-radius: 20px;
+ box-shadow:10px 10px 5px rgb(125, 125, 119);;
+}
+
 
 .logo-image{
     width: 70px;
@@ -52,8 +132,8 @@ nav a {
     background-color: #ddd;
     color: black;
 }*/
-/* Bei Bildschirmen unter 600px Breite die Links und die Suchbox vertikal anordnen */
-@media screen and (max-width: 600px) {
+/* Bei Bildschirmen unter 300px Breite die Links und die Suchbox vertikal anordnen */
+@media screen and (max-width: 300px) {
     .topnav a,
     .topnav input[type="text"] {
         float: none;
@@ -71,6 +151,27 @@ nav a {
 main {
     padding: 20px;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+   td, th {
+    border: 1px solid #0c0202;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  
+  
+
+
 
 footer {
     background-color: #070707;
