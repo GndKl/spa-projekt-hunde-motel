@@ -61,7 +61,7 @@ const Angebote = () => {
         <td>(zwei Nächte gratis!)</td>
     </tr>
    
-   <h2> Zusatzleistungen :</h2>
+   <h2> Zusatzleistungen:</h2>
 <br />
 <h2> Unsere Angebote für Mitglieder</h2>
     <tr>

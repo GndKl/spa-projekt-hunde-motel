@@ -3,179 +3,246 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgba(223, 133, 30, 0.603);
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
-header {
-    background-color: #31960c;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-
-}
-/*.bildtext{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}*/
-
-
-
-
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
-
-
-
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: #0e0d0d;
-    padding: 10px;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav-image{
     width: 100%;
-   /**margin: auto;**/
-    height: 100%;
-}
-
-
-
-.container img {vertical-align: middle;}
-
-.container .content {
-  position:relative; /* wichtig richtig eintellen!!!!*/
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(225, 134, 29, 0.9); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
- border-radius: 20px;
- box-shadow:10px 10px 5px rgb(125, 125, 119);;
-}
-
-
-.logo-image{
-    width: 70px;
-    height: 76px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-}
-/*.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}*/
-/* Bei Bildschirmen unter 300px Breite die Links und die Suchbox vertikal anordnen */
-@media screen and (max-width: 300px) {
-    .topnav a,
-    .topnav input[type="text"] {
-        float: none;
-        display: block;
-        text-align: left;
+    height: 100vh;
+     }
+     nav ul {
+        list-style: none;
+        display:inline;
+        justify-content: center;
+       background-color:#070707;
+        gap: 1px;
+        width: 100%; 
+        height: auto; 
+     }
+     nav li {
+        margin-right: 2px; /*NAV TEXT*/
+        width: 7vh; /*------------------nav breit*/
+        flex:1;
+        height:10%;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        display:inline-block; /*.....................*/
         width: 100%;
-        margin: 0;
-        padding: 14px;
+        height: 100%;
+        text-align: center; 
+        padding: 10px 0; 
     }
-    .topnav input[type="text"] {
-        border: 1px solid #ccc;
+    .nav-image{
+        width: 100%; 
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
     }
-}
 
-main {
-    padding: 20px;
-}
+    .logo{
+        display:block;
+        place-items: center;
+        margin-top: -100px;
+        padding: 20px;
+        width: 70px;
+        height: 130px;
+    }
+    .topnav{
+        width:100%; 
+        height:20%;
+        font-size: 13px;
+    }
 
-table {
+     .dropdown {
+        /*float:none;*/
+        /*overflow: hidden;*/
+        position: relative;
+        display: inline-block;
+       
+        }
+        /**/
+        .dropbtn {
+            font-size: 15px;
+            border: none;
+            outline: none;
+            padding: 14px 16px;
+            background-color: rgb(217, 10, 10);
+            color: white;
+            cursor: pointer;
+        }
+        
+      /* .dropdown .dropbtn {
+        font-size: 15px;
+        border: none;
+        outline: none;
+       color: rgb(234, 16, 173);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        width: 25%;
+        height: 0px;
+        background-color: rgb(217, 10, 10);
+      }*/
+
+
+      .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(195, 53, 18);
+        border-radius: 10px;
+
+      }
+     .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F9F9F9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(209, 199, 199, 0.027);
+        z-index: 1;
+      }
+      .dropdown-content a {
+       /* float: none;
+        color: rgb(9, 8, 9);
+        padding: 20px 10%; 
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        width: 70px;
+        height: 18px;
+        margin: -1px;
+        font-size: 10px;*/
+        
+            color: black;
+            padding: 12px 13px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .show {
+        display: block;
+    }
+
+    h4{
+        text-align: center; /**center text */
+        justify-content:center;
+    }
+    .container img {vertical-align: middle;}
+    .container .content {
+        position:relative; /* wichtig richtig eintellen!!!!*/
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(217, 139, 49, 0.9); /* Black background with 0.5 opacity */
+        color: #fffdfd;
+        width: 95%; /**/
+        height:10%;
+        padding-top: 1px;
+       border-radius: 20px;
+       box-shadow:10px 10px 5px rgba(227, 219, 214, 0.829);
+       justify-content: center; /**/
+       margin-top: 40px;
+      }
+      .content{
+        font-size: auto;
+        justify-content:center; /**/
+        text-align: center; /**center text */
+   
+      }
+
+      /*About siete Box*/
+
+      .box{
+        position:relative; /* wichtig richtig eintellen!!!!*/
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(217, 139, 49, 0.9); /* Black background with 0.5 opacity */
+        color: #fffdfd;
+        width: 95%; /**/
+        height:10%;
+        padding-top: 3px;
+       border-radius: 20px;
+       box-shadow:10px 10px 5px rgba(227, 219, 214, 0.829);
+       justify-content: center; /**/
+       margin-top: 10px;
+       text-align: center;
+      }
+        
+         
+      li {
+        display: inline;
+        float: left;
+        width: 40%;
+         background-color: #0d0f0d;
+        }
+    header {
+        background-color: #e0a566;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        }
+        .service-page{  /*Service pages*/
+            position:relative; /* wichtig richtig eintellen!!!!*/
+            bottom: 0;
+            background: rgb(0, 0, 0); /* Fallback color */
+            background: rgba(225, 134, 29, 0.9); /* Black background with 0.5 opacity */
+            color: #F1F1F1;
+            width: 100%;
+            padding: 20px;
+           border-radius: 20px;
+           box-shadow:10px 10px 5px rgba(218, 212, 204, 0.829);
+           margin-top: 20%; /*lefele*/
+        }
+        #root{
+            width:100%; 
+        }
+        /**.topnav{
+            width:100%; /nav breite mobil/
+            height:30px;
+        }**/
+        .topnav a:hover { 
+            background-color: hsl(21, 91%, 46%);
+            color: rgb(243, 240, 236);
+        }
+        .topnav input[type="text"] {
+            float: none;
+            display: inline-flex;
+            text-align: center;
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 30% 30% 10%;
+        }
+        table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     }
-
    td, th {
-    border: 1px solid #0c0202;
+    border: 1px solid #0C0202;
     text-align: left;
     padding: 8px;
+    width: auto; /*öööööööööööööööö*/
+   
   }
-
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #DDDDDD;
   }
-  
-  
-  
-
-
-
+  .mali{
+    grid-template-columns:max-content;
+    width: 100%;
+  }
 footer {
     background-color: #070707;
     color: #fff;
     text-align: center;
     padding: 10px;
+
 }
