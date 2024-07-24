@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./style.css";
+
 const Nav = () => {
     return (
         <>
@@ -18,23 +20,23 @@ const Nav = () => {
         <div className="topnav">
           <ul>
             
-            <li><a href="/">Startseite</a></li>
-            <li><a href="/about">Über uns</a></li>
-            {/* <li><a href="/Kontakt">Kontakt</a></li> */ }
+            <li><Link to="/">Startseite</Link></li>
+            <li><Link to="/about">Über uns</Link></li>
+            {/* <li><Link to="/Kontakt">Kontakt</Link></li> */ }
       
             
             <div className="dropdown">
               <button className="dropbtn"> Nützlich
                 <i className="fa fa-caret-down"></i> </button>
          <div className="dropdown-content">
-         <li><a href="/service">Aktivitäten </a>
+         <li><Link to="/service">Aktivitäten </Link>
          
          </li>
-         <a href="/pflege">Pflege</a>
-         <a href="/training">Training</a>
-         <a href="/physiotherapie">Physiotherapie</a>
-         <a href="/psychologie">Psychologie</a>
-         <a href="/reha">Rehabilitation </a>
+         <Link to="/pflege">Pflege</Link>
+         <Link to="/training">Training</Link>
+         <Link to="/physiotherapie">Physiotherapie</Link>
+         <Link to="/psychologie">Psychologie</Link>
+         <Link to="/reha">Rehabilitation </Link>
          
          </div>
              </div> 
@@ -42,13 +44,13 @@ const Nav = () => {
           
            
         
-            <li><a href="/angebote"> Angebote</a></li>
+            <li><Link to="/angebote"> Angebote</Link></li>
 
             <li>
-              <a href="/gallerie">Gallerie</a>
+              <Link to="/gallerie">Gallerie</Link>
             </li>
 
-          {/*   <li><a href="#meinenähe">Meine Nähe</a></li> */ }
+          {/*   <li><Link to="#meinenähe">Meine Nähe</Link></li> */ }
 
             {/*    <input type="text" placeholder="Search.." width="100px" height="100px"/>
             */ }

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const NäHe = () => {
     return (
@@ -8,13 +10,13 @@ const NäHe = () => {
                 <i className="fa fa-caret-down"></i>
          </button>
          <div className="dropdown-content">
-         <li><a href="/service">Aktivitäten und Services</a>
+         <li> <Link to="/service">Aktivitäten und Services </Link>
          
          </li>
-            <a href="#tierarzt">Tierarzt</a>
-            <a href="#Pensionen">Hundepensionen</a>
-            <a href="#versicherungen">Versicherungen</a>
-            <a href="#">Link 3</a>
+             <Link to="#tierarzt">Tierarzt </Link>
+             <Link to="#Pensionen">Hundepensionen </Link>
+             <Link to="#versicherungen">Versicherungen </Link>
+             <Link to="#">Link 3 </Link>
          </div>
              </div> 
            
