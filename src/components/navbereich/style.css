@@ -10,7 +10,7 @@ body {
         list-style: none;
         display:inline;
         justify-content: center;
-       background-color:#070707;
+      
         gap: 1px;
         width: 100%; 
         height: auto; 
@@ -58,8 +58,8 @@ body {
      .dropdown {
         /*float:none;*/
         /*overflow: hidden;*/
-        position: relative;
-        display: inline-block;
+      /* position: relative;*/
+       /* display: inline-block;*/
        
         }
         /**/
@@ -67,7 +67,7 @@ body {
             font-size: 15px;
             border: none;
             outline: none;
-            padding: 14px 16px;
+            /*padding: 14px 16px;*/
             background-color: rgb(217, 10, 10);
             color: white;
             cursor: pointer;
