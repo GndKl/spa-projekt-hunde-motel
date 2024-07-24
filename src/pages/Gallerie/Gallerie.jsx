@@ -22,37 +22,36 @@ const images = [
   "/images/dog12.jpeg",
   "/images/dog13.jpeg",
 ];
-const Gallerie = () => {
-  const Carousel = ({ images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextImage = () => {
-      setCurrentIndex((currentIndex + 1) % images.length);
-    };
+  const nextImage = () => {
+    setCurrentIndex((currentIndex + 1) % images.length);
+  };
 
-    const prevImage = () => {
-      setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-    };
-
-    return (
-      <div className="carousel">
-        <button onClick={prevImage} className="carousel-button prev-button">
-          Prev
-        </button>
-        <img
-          src={images[currentIndex]}
-          alt={`carousel-${currentIndex}`}
-          className="carousel-image"
-        />
-        <button onClick={nextImage} className="carousel-button next-button">
-          Next
-        </button>
-      </div>
-    );
+  const prevImage = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
   return (
-    <div>
+    <div className="carousel">
+      <button onClick={prevImage} className="carousel-button prev-button">
+        Prev
+      </button>
+      <img
+        src={images[currentIndex]}
+        alt={`carousel-${currentIndex}`}
+        className="carousel-image"
+      />
+      <button onClick={nextImage} className="carousel-button next-button">
+        Next
+      </button>
+    </div>
+  );
+};
+const Gallerie = () => {
+  return (
+    <div className="gallerie-hintergrund">
       <h1>Gallerie</h1>
       <Carousel images={images} />
     </div>

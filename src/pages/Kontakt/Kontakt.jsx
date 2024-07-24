@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import "./Kontakt.css";
 
 const Kontakt = () => {
   return (
     <>
       <h1>Kontaktieren Sie uns</h1>
+
       <form>
         <div>
           <label htmlFor="name">Vollständiger Name</label>
@@ -19,6 +21,7 @@ const Kontakt = () => {
         </div>
         <input type="submit" value="Nachricht Abschicken" />
       </form>
+
       <Link to={"/"}>Zurück zur Startseite</Link>
     </>
   );

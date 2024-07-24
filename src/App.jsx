@@ -4,13 +4,13 @@ import SharedLayout from "./pages/SharedLayout";
 import Home from "./pages/Home/Home";
 import Kontakt from "./pages/Kontakt/Kontakt";
 import NotFound from "./pages/NotFound/NotFound";
-import "./css/App.css";
 
 import Gallerie from "./pages/Gallerie/Gallerie";
 import Service from "./pages/Service/Service";
 import About from "./pages/About/About";
 import Angebote from "./pages/Angebote/Angebote";
 import NHe from "./pages/Nähe/Nähe";
+import "./css/App.css";
 
 function App() {
   return (

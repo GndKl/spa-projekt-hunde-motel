@@ -1,12 +1,41 @@
+
+.gallerie-hintergrund {
+    background-image: url("../../../images/baum.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+}
+
+div h1 {
+    
+}
+
 .carousel {
-    position: relative;
-    width: 800px; /* Passe die Größe nach Bedarf an */
-    height: 400px; /* Passe die Größe nach Bedarf an */
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px; /* Passe die Größe nach Bedarf an */
+    height: 550px; /* Passe die Größe nach Bedarf an */
     overflow: hidden;
     margin: auto;
-    border: 5px solid orange;
-    border-radius: 50px 50px;
+    border: 5px solid brown;
+    border-radius: 40px 40px;
 }
+img.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(350px);
+  }
+
+  .carousel {
+    filter: drop-shadow(8px 8px 8px orange);
+  }
 
 .carousel-image {
     width: 100%;
@@ -19,9 +48,9 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: 2px solid red;
+    background-color: black;
+    color: azure;
+    border: 2px solid brown;
     border-radius: 50px 50px;
     padding: 10px;
     cursor: pointer;
@@ -34,3 +63,17 @@
 .next-button {
     right: 10px;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
