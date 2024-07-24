@@ -10,7 +10,13 @@ import Service from "./pages/Service/Service";
 import About from "./pages/About/About";
 import Angebote from "./pages/Angebote/Angebote";
 import NHe from "./pages/Nähe/Nähe";
-import "./css/App.css";
+import Hundepflege from "./pages/Hundepflege/Hundepflege";
+import Training from "./pages/Training/Training";
+import Therapie from "./pages/Therapie/Therapie";
+import Psychologie from "./pages/Psychologie/Psychologie";
+import Reha from "./pages/Reha/Reha";
+
+
 
 function App() {
   return (
@@ -29,7 +35,14 @@ function App() {
 
               <Route path="service" element={<Service />} />
 
-              <Route path="nähe" element={<NHe />} />
+                            <Route path="nhe" element={<NHe />} />
+
+                            <Route path="Hundepflege" element={<Hundepflege />} />
+                            <Route path="Training" element={<Training />} />
+                            <Route path="Therapie" element={<Therapie />} />
+                            <Route path="Psychologie" element={<Psychologie />} />
+                            <Route path="Reha" element={<Reha />} />
+
 
               {/* Weitere Routen hier zwischen */}
               <Route path="kontakt" element={<Kontakt />} />

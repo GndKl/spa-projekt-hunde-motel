@@ -64,10 +64,9 @@ display: block;
 
 .dropdown:hover .dropdown-content {display: block;}
 
----
-
+---------------
     <div className="dropdown">
-              <button className="dropbtn">Dropdown
+              <button className="dropbtn">Dropdown 
                 <i className="fa fa-caret-down"></i>
          </button>
          <div className="dropdown-content">
@@ -88,3 +87,51 @@ Motto für Woofy-Motel Hundeparadise
 - “Ein Ort voller Abenteuer und Entspannung für Ihren Hund”
 
 Home bild: ./images/schnuffel.jpg" alt="Snow" style="width:100%;"/>
+
+Drowpdown 
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: auto;
+    }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+    width: 200px;
+    height: 0px;
+    background-color: red;
+  }
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 81, 0);
+  }
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 30px 20px; /text abstand/
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 70px;
+    height: 18px;
+    margin: -1px;/abstand/
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
