@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Gallerie.css";
+import { Link } from "react-router-dom";
 
 const images = [
   "/images/dachshund.jpg",
